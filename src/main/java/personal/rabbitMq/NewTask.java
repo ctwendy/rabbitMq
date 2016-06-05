@@ -19,7 +19,7 @@ public class NewTask {
         String message = getMessage(argv);
 
         channel.basicPublish("", TASK_QUEUE_NAME,
-                MessageProperties.PERSISTENT_TEXT_PLAIN,
+                MessageProperties.PERSISTENT_TEXT_PLAIN, // make sure the message get persist in rabbitMq
                 message.getBytes("UTF-8"));
         System.out.println(" [x] Sent '" + message + "'");
 
