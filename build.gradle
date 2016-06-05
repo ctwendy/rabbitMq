@@ -1,9 +1,6 @@
-import com.wiredforcode.gradle.spawn.*
-import com.github.jengelman.gradle.plugins.processes.tasks.*
-
 buildscript {
     repositories {
-       jcenter()
+        jcenter()
     }
 }
 
